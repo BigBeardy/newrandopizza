@@ -1,4 +1,9 @@
-final page
-<p><%finalchoices.each do |value|%></p>
-<%=value%>
+
+
+
+<p><%confirmed.each do |key, value|%></p>
+<%if key == value%> 
+	<%=value%>
+<!-- <%=value%> -->
+<%end%>
 <%end%>
